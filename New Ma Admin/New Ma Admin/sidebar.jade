@@ -1,0 +1,92 @@
+.navbar-default.sidebar(role='navigation')
+    .sidebar-nav.navbar-collapse.slimscrollsidebar
+        .user-profile
+            .dropdown.user-pro-body
+                div
+                    img.img-circle(src='./plugins/images/users/varun.jpg', alt='user-img')
+                a.dropdown-toggle.u-dropdown(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                    | Steave Gection
+                    span.caret
+                ul.dropdown-menu.animated.flipInY
+                    li
+                        a(href='#')
+                            i.ti-user
+                            |  My Profile
+
+                    li.divider(role='separator')
+                    li
+                        a(href='#')
+                            i.ti-settings
+                            |  Account Setting
+                    li.divider(role='separator')
+                    li
+                        a(href='login.html')
+                            i.fa.fa-power-off
+                            |  Logout
+        ul#side-menu.nav
+            li.sidebar-search.hidden-sm.hidden-md.hidden-lg
+                // input-group
+                .input-group.custom-search-form
+                    input.form-control(type='text', placeholder='Search...')
+                    span.input-group-btn
+                        button.btn.btn-default(type='button')
+                            i.fa.fa-search
+                // /input-group
+            li.nav-small-cap.m-t-10 --- Main Menu
+            li
+                a.waves-effect.active(href='index.html')
+                    i.linea-icon.linea-basic.fa-fw.ti-dashboard
+                    span.hide-menu
+                        | Dashboard
+
+                        span.label.label-rouded.label-custom.pull-right 4
+             //user profile
+            li.nav-small-cap.m-t-10 --User
+
+            li
+                a.waves-effect(href='userprofile.html')
+                    i.fa-fw.ti-user
+                    span.hide-menu My Profile
+
+            li
+                a.waves-effect(href='newuser.html')
+                    i.fa-fw.ti-layers
+                    span.hide-menu New Admin
+
+            li
+                a.waves-effect(href='userhistory.html')
+                    i.fa-fw.ti-timer
+                    span.hide-menu Admin  History
+            li.nav-small-cap.m-t-10 --People
+
+            li
+                a.waves-effect(href='newpeople.html')
+                    i.fa-fw.ti-user
+                    span.hide-menu New person
+
+            li
+                a.waves-effect(href='managepeople.html')
+                    i.fa-fw.ti-layers-alt
+                    span.hide-menu Manage Persons
+            li.nav-small-cap.m-t-10 --Activity
+
+            li
+                a.waves-effect(href='addactivity.html')
+                    i.fa-fw.ti-check
+                    span.hide-menu Add Activity
+            li
+                a.waves-effect(href='manage_activty.html')
+                    i.fa-fw.ti-check
+                    span.hide-menu Manage Activty
+            li.nav-small-cap.m-t-10 --Report
+
+            li
+                a.waves-effect(href='report.html')
+                    i.fa-fw.ti-blackboard
+                    span.hide-menu Report
+            li.nav-small-cap.m-t-10 -Logout
+
+            li
+                a.waves-effect(href='login.html')
+                    i.icon-logout.fa-fw
+                    span.hide-menu Log out

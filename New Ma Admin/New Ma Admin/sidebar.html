@@ -1,0 +1,701 @@
+<!-- Navigationnav.navbar.navbar-default.navbar-static-top.m-b-0
+    .navbar-header
+        a.navbar-toggle.hidden-sm.hidden-md.hidden-lg(href='javascript:void(0)', data-toggle='collapse', data-target='.navbar-collapse')
+            i.ti-menu
+        .top-left-part
+            a.logo(href='index.html')
+                b
+                    // This is dark logo icon
+                    img.dark-logo(src='./plugins/images/eliteadmin-logo.png', alt='home')
+                    // This is light logo icon
+                    img.light-logo(src='./plugins/images/eliteadmin-logo-dark.png', alt='home')
+                span.hidden-xs
+                    // This is dark logo text
+                    img.dark-logo(src='./plugins/images/eliteadmin-text.png', alt='home')
+                    // This is light logo text
+                    img.light-logo(src='./plugins/images/eliteadmin-text-dark.png', alt='home')
+        ul.nav.navbar-top-links.navbar-left.hidden-xs
+            li
+                a.open-close.hidden-xs.waves-effect.waves-light(href='javascript:void(0)')
+                    i.icon-arrow-left-circle.ti-menu
+            li
+                form.app-search.hidden-xs(role='search')
+                    input.form-control(type='text', placeholder='Search...')
+                    a(href='')
+                        i.fa.fa-search
+        ul.nav.navbar-top-links.navbar-right.pull-right
+            li.dropdown
+                a.dropdown-toggle.waves-effect.waves-light(data-toggle='dropdown', href='#')
+                    i.icon-envelope
+                    .notify
+                        span.heartbit
+                        span.point
+                ul.dropdown-menu.mailbox.animated.bounceInDown
+                    li
+                        .drop-title You have 4 new messages
+                    li
+                        .message-center
+                            a(href='#')
+                                .user-img
+                                    img.img-circle(src='./plugins/images/users/pawandeep.jpg', alt='user')
+                                    span.profile-status.online.pull-right
+                                .mail-contnet
+                                    h5 Pavan kumar
+                                    span.mail-desc Just see the my admin!
+                                    span.time 9:30 AM
+                            a(href='#')
+                                .user-img
+                                    img.img-circle(src='./plugins/images/users/sonu.jpg', alt='user')
+                                    span.profile-status.busy.pull-right
+                                .mail-contnet
+                                    h5 Sonu Nigam
+                                    span.mail-desc I've sung a song! See you at
+                                    span.time 9:10 AM
+                            a(href='#')
+                                .user-img
+                                    img.img-circle(src='./plugins/images/users/arijit.jpg', alt='user')
+                                    span.profile-status.away.pull-right
+                                .mail-contnet
+                                    h5 Arijit Sinh
+                                    span.mail-desc I am a singer!
+                                    span.time 9:08 AM
+                            a(href='#')
+                                .user-img
+                                    img.img-circle(src='./plugins/images/users/pawandeep.jpg', alt='user')
+                                    span.profile-status.offline.pull-right
+                                .mail-contnet
+                                    h5 Pavan kumar
+                                    span.mail-desc Just see the my admin!
+                                    span.time 9:02 AM
+                    li
+                        a.text-center(href='javascript:void(0);')
+                            strong See all notifications
+                            i.fa.fa-angle-right
+                // /.dropdown-messages
+            // /.dropdown
+            li.dropdown
+                a.dropdown-toggle.waves-effect.waves-light(data-toggle='dropdown', href='#')
+                    i.icon-note
+                    .notify
+                        span.heartbit
+                        span.point
+                ul.dropdown-menu.dropdown-tasks.animated.slideInUp
+                    li
+                        a(href='#')
+                            div
+                                p
+                                    strong Task 1
+                                    span.pull-right.text-muted 40% Complete
+                                .progress.progress-striped.active
+                                    .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                                        span.sr-only 40% Complete (success)
+                    li.divider
+                    li
+                        a(href='#')
+                            div
+                                p
+                                    strong Task 2
+                                    span.pull-right.text-muted 20% Complete
+                                .progress.progress-striped.active
+                                    .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+                                        span.sr-only 20% Complete
+                    li.divider
+                    li
+                        a(href='#')
+                            div
+                                p
+                                    strong Task 3
+                                    span.pull-right.text-muted 60% Complete
+                                .progress.progress-striped.active
+                                    .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                                        span.sr-only 60% Complete (warning)
+                    li.divider
+                    li
+                        a(href='#')
+                            div
+                                p
+                                    strong Task 4
+                                    span.pull-right.text-muted 80% Complete
+                                .progress.progress-striped.active
+                                    .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+                                        span.sr-only 80% Complete (danger)
+                    li.divider
+                    li
+                        a.text-center(href='#')
+                            strong See All Tasks
+                            i.fa.fa-angle-right
+                // /.dropdown-tasks
+            // /.dropdown
+            // .Megamenu
+            li.mega-dropdown
+                a.dropdown-toggle.waves-effect.waves-light(data-toggle='dropdown', href='#')
+                    span.hidden-xs Mega
+                    i.icon-options-vertical
+                ul.dropdown-menu.mega-dropdown-menu.animated.bounceInDown
+                    li.col-sm-3
+                        ul
+                            li.dropdown-header Forms Elements
+                            li
+                                a(href='form-basic.html') Basic Forms
+                            li
+                                a(href='form-layout.html') Form Layout
+                            li
+                                a(href='form-advanced.html') Form Addons
+                            li
+                                a(href='form-material-elements.html') Form Material
+                            li
+                                a(href='form-float-input.html') Form Float Input
+                            li
+                                a(href='form-upload.html') File Upload
+                            li
+                                a(href='form-mask.html') Form Mask
+                            li
+                                a(href='form-img-cropper.html') Image Cropping
+                            li
+                                a(href='form-validation.html') Form Validation
+                    li.col-sm-3
+                        ul
+                            li.dropdown-header Advance Forms
+                            li
+                                a(href='form-dropzone.html') File Dropzone
+                            li
+                                a(href='form-pickers.html') Form-pickers
+                            li
+                                a(href='icheck-control.html') Icheck Form Controls
+                            li
+                                a(href='form-wizard.html') Form-wizards
+                            li
+                                a(href='form-typehead.html') Typehead
+                            li
+                                a(href='form-xeditable.html') X-editable
+                            li
+                                a(href='form-summernote.html') Summernote
+                            li
+                                a(href='form-bootstrap-wysihtml5.html') Bootstrap wysihtml5
+                            li
+                                a(href='form-tinymce-wysihtml5.html') Tinymce wysihtml5
+                    li.col-sm-3
+                        ul
+                            li.dropdown-header Table Example
+                            li
+                                a(href='basic-table.html') Basic Tables
+                            li
+                                a(href='table-layouts.html') Table Layouts
+                            li
+                                a(href='data-table.html') Data Table
+                            li.hidden
+                                a(href='crud-table.html') Crud Table
+                            li
+                                a(href='bootstrap-tables.html') Bootstrap Tables
+                            li
+                                a(href='responsive-tables.html') Responsive Tables
+                            li
+                                a(href='editable-tables.html') Editable Tables
+                            li
+                                a(href='foo-tables.html') FooTables
+                            li
+                                a(href='jsgrid.html') JsGrid Tables
+                    li.col-sm-3
+                        ul
+                            li.dropdown-header Charts
+                            li
+                                a(href='flot.html') Flot Charts
+                            li
+                                a(href='morris-chart.html') Morris Chart
+                            li
+                                a(href='chart-js.html') Chart-js
+                            li
+                                a(href='peity-chart.html') Peity Charts
+                            li
+                                a(href='knob-chart.html') Knob Charts
+                            li
+                                a(href='sparkline-chart.html') Sparkline charts
+                            li
+                                a(href='extra-charts.html') Extra Charts
+                    li.col-sm-12.m-t-40.demo-box
+                        .row
+                            .col-sm-2
+                                .white-box.text-center.bg-purple
+                                    a.text-white(href='../eliteadmin-inverse/index.html', target='_blank')
+                                        i.linea-icon.linea-basic.fa-fw(data-icon='v')
+                                        br
+                                        | Demo 1
+                            .col-sm-2
+                                .white-box.text-center.bg-success
+                                    a.text-white(href='../eliteadmin/index.html', target='_blank')
+                                        i.linea-icon.linea-basic.fa-fw(data-icon='v')
+                                        br
+                                        | Demo 2
+                            .col-sm-2
+                                .white-box.text-center.bg-info
+                                    a.text-white(href='../eliteadmin-ecommerce/index.html', target='_blank')
+                                        i.linea-icon.linea-basic.fa-fw(data-icon='v')
+                                        br
+                                        | Demo 3
+                            .col-sm-2
+                                .white-box.text-center.bg-inverse
+                                    a.text-white(href='../eliteadmin-horizontal-navbar/index3.html', target='_blank')
+                                        i.linea-icon.linea-basic.fa-fw(data-icon='v')
+                                        br
+                                        | Demo 4
+                            .col-sm-2
+                                .white-box.text-center.bg-warning
+                                    a.text-white(href='../eliteadmin-iconbar/index4.html', target='_blank')
+                                        i.linea-icon.linea-basic.fa-fw(data-icon='v')
+                                        br
+                                        | Demo 5
+                            .col-sm-2
+                                .white-box.text-center.bg-danger
+                                    a.text-white(href='https://themeforest.net/item/elite-admin-responsive-web-app-kit-/16750820', target='_blank')
+                                        i.linea-icon.linea-ecommerce.fa-fw(data-icon='d')
+                                        br
+                                        | Buy Now
+            // /.Megamenu
+            li.right-side-toggle
+                a.waves-effect.waves-light(href='javascript:void(0)')
+                    i.ti-settings
+            // /.dropdown
+    // /.navbar-header
+    // /.navbar-top-links
+    // /.navbar-static-side
+// Left navbar-header
+.navbar-default.sidebar(role='navigation')
+    .sidebar-nav.navbar-collapse.slimscrollsidebar
+        .user-profile
+            .dropdown.user-pro-body
+                div
+                    img.img-circle(src='./plugins/images/users/varun.jpg', alt='user-img')
+                a.dropdown-toggle.u-dropdown(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                    | Steave Gection
+                    span.caret
+                ul.dropdown-menu.animated.flipInY
+                    li
+                        a(href='#')
+                            i.ti-user
+                            |  My Profile
+                    li
+                        a(href='#')
+                            i.ti-wallet
+                            |  My Balance
+                    li
+                        a(href='#')
+                            i.ti-email
+                            |  Inbox
+                    li.divider(role='separator')
+                    li
+                        a(href='#')
+                            i.ti-settings
+                            |  Account Setting
+                    li.divider(role='separator')
+                    li
+                        a(href='login.html')
+                            i.fa.fa-power-off
+                            |  Logout
+        ul#side-menu.nav
+            li.sidebar-search.hidden-sm.hidden-md.hidden-lg
+                // input-group
+                .input-group.custom-search-form
+                    input.form-control(type='text', placeholder='Search...')
+                    span.input-group-btn
+                        button.btn.btn-default(type='button')
+                            i.fa.fa-search
+                // /input-group
+            li.nav-small-cap.m-t-10 --- Main Menu
+            li
+                a.waves-effect.active(href='index.html')
+                    i.linea-icon.linea-basic.fa-fw(data-icon='v')
+                    span.hide-menu
+                        | Dashboard
+                        span.fa.arrow
+                        span.label.label-rouded.label-custom.pull-right 4
+                ul.nav.nav-second-level
+                    li
+                        a(href='index.html') Minimalistic
+                    li
+                        a(href='index2.html') Demographical
+                    li
+                        a(href='index3.html') Analitical
+                    li
+                        a(href='index4.html') Simpler
+            li
+                a.waves-effect(href='javascript:void(0);')
+                    i.linea-icon.linea-basic.fa-fw.text-danger(data-icon='7')
+                    span.hide-menu.text-danger
+                        | Multipurpose
+                        span.fa.arrow
+                        span.label.label-rouded.label-danger.pull-right HOT
+                ul.nav.nav-second-level
+                    li
+                        a(href='../eliteadmin-hospital/index.html') Hospital Admin
+                    li
+                        a(href='../eliteadmin-crm/index.html') CRM Admin
+                    li
+                        a(href='../eliteadmin-university/index.html') University Admin
+                    li
+                        a(href='../eliteadmin-music/index.html') Music Admin
+                    li
+                        a(href='../eliteadmin-real-estate/index.html') Real Estate Admin
+                    li.divider(role='separator')
+                    li
+                        a(href='../eliteadmin-inverse/index.html') Inverse
+                    li
+                        a(href='../eliteadmin-colors/index.html') Colors
+                    li
+                        a(href='../eliteadmin/index.html') Eliteadmin
+                    li
+                        a(href='../eliteadmin-wpmenu/index.html') Wpmenu
+                    li
+                        a(href='../eliteadmin-ecommerce/index.html') Ecommerce
+                    li
+                        a(href='../eliteadmin-modern/index.html') Modern
+                    li
+                        a(href='../eliteadmin-inverse-php/index.php') Basic PHP
+                    li
+                        a(href='../eliteadmin-material/index3.html') Material Design
+                    li
+                        a(href='../eliteadmin-mini-sidebar/index3.html') Mini Sidebar
+                    li
+                        a(href='../eliteadmin-horizontal-navbar/index3.html') Horizontal Boxed Nav
+                    li
+                        a(href='../eliteadmin-horizontal-nav-fullwidth/index.html') Horizontal Full Nav
+                    li
+                        a(href='../eliteadmin-iconbar/index4.html') Iconbar
+                    li
+                        a(href='../eliteadmin-rtl/index.html') Eliteadmin RTL
+                    li
+                        a(href='../eliteadmin-inverse-rtl/index.html') Inverse RTL
+            li
+                a.waves-effect(href='inbox.html')
+                    i.linea-icon.linea-basic.fa-fw(data-icon=')')
+                    span.hide-menu
+                        | Apps
+                        span.fa.arrow
+                ul.nav.nav-second-level
+                    li
+                        a(href='chat.html') Chat-message
+                    li
+                        a.waves-effect(href='javascript:void(0)')
+                            | Inbox
+                            span.fa.arrow
+                        ul.nav.nav-third-level
+                            li
+                                a(href='inbox.html') Mail box
+                            li
+                                a(href='inbox-detail.html') Inbox detail
+                            li
+                                a(href='compose.html') Compose mail
+                    li
+                        a.waves-effect(href='javascript:void(0)')
+                            | Contacts
+                            span.fa.arrow
+                        ul.nav.nav-third-level
+                            li
+                                a(href='contact.html') Contact1
+                            li
+                                a(href='contact2.html') Contact2
+                            li
+                                a(href='contact-detail.html') Contact Detail
+            li
+                a.waves-effect(href='#')
+                    i.linea-icon.linea-basic.fa-fw(data-icon='/')
+                    span.hide-menu
+                        | UI Elements
+                        span.fa.arrow
+                        span.label.label-rouded.label-info.pull-right 13
+                ul.nav.nav-second-level
+                    li
+                        a(href='cards.html') Cards
+                    li
+                        a(href='panels-wells.html') Panels and Wells
+                    li
+                        a(href='panel-ui-block.html') Panels With BlockUI
+                    li
+                        a(href='panel-draggable.html') Draggable Panel
+                    li
+                        a(href='portlet-draggable.html') Draggable Portlet
+                    li
+                        a(href='buttons.html') Buttons
+                    li
+                        a(href='bootstrap-switch.html') Bootstrap Switch
+                    li
+                        a(href='date-paginator.html') Date Paginator
+                    li
+                        a(href='sweatalert.html') Sweat alert
+                    li
+                        a(href='typography.html') Typography
+                    li
+                        a(href='grid.html') Grid
+                    li
+                        a(href='tabs.html') Tabs
+                    li
+                        a(href='tab-stylish.html') Stylish Tabs
+                    li
+                        a(href='modals.html') Modals
+                    li
+                        a(href='progressbars.html') Progress Bars
+                    li
+                        a(href='notification.html') Notifications
+                    li
+                        a(href='carousel.html') Carousel
+                    li
+                        a(href='list-style.html') List & Media object
+                    li
+                        a(href='user-cards.html') User Cards
+                    li
+                        a(href='timeline.html') Timeline
+                    li
+                        a(href='timeline-horizontal.html') Horizontal Timeline
+                    li
+                        a(href='nestable.html') Nesteble
+                    li
+                        a(href='range-slider.html') Range Slider
+                    li
+                        a(href='ribbons.html') Ribbons
+                    li
+                        a(href='steps.html') Steps
+                    li
+                        a(href='session-idle-timeout.html') Session Idle Timeout
+                    li
+                        a(href='session-timeout.html') Session Timeout
+                    li
+                        a(href='bootstrap.html') Bootstrap UI
+                    li
+                        a(href='tooltip-stylish.html') Stylish Tooltips
+            li
+                a.waves-effect(href='forms.html')
+                    i.linea-icon.linea-basic.fa-fw(data-icon='')
+                    span.hide-menu
+                        | Forms
+                        span.fa.arrow
+                ul.nav.nav-second-level
+                    li
+                        a(href='form-basic.html') Basic Forms
+                    li
+                        a(href='form-layout.html') Form Layout
+                    li
+                        a(href='form-advanced.html') Form Addons
+                    li
+                        a(href='form-material-elements.html') Form Material
+                    li
+                        a(href='form-float-input.html') Form Float Input
+                    li
+                        a(href='form-upload.html') File Upload
+                    li
+                        a(href='form-mask.html') Form Mask
+                    li
+                        a(href='form-img-cropper.html') Image Cropping
+                    li
+                        a(href='form-validation.html') Form Validation
+                    li
+                        a(href='form-dropzone.html') File Dropzone
+                    li
+                        a(href='form-pickers.html') Form-pickers
+                    li
+                        a(href='icheck-control.html') Icheck Form Controls
+                    li
+                        a(href='form-wizard.html') Form-wizards
+                    li
+                        a(href='form-typehead.html') Typehead
+                    li
+                        a(href='form-xeditable.html') X-editable
+                    li
+                        a(href='form-summernote.html') Summernote
+                    li
+                        a(href='form-bootstrap-wysihtml5.html') Bootstrap wysihtml5
+                    li
+                        a(href='form-tinymce-wysihtml5.html') Tinymce wysihtml5
+            li.nav-small-cap --- Proffessional
+            li
+                a.waves-effect(href='#')
+                    i.linea-icon.linea-basic.fa-fw(data-icon='')
+                    span.hide-menu
+                        | Sample Pages
+                        span.fa.arrow
+                        span.label.label-rouded.label-purple.pull-right 30
+                ul.nav.nav-second-level
+                    li
+                        a(href='starter-page.html') Starter Page
+                    li
+                        a(href='blank.html') Blank Page
+                    li
+                        a.waves-effect(href='javascript:void(0)')
+                            | Email Templates
+                            span.fa.arrow
+                        ul.nav.nav-third-level
+                            li
+                                a(href='../email-templates/basic.html') Basic
+                            li
+                                a(href='../email-templates/alert.html') Alert
+                            li
+                                a(href='../email-templates/billing.html') Billing
+                            li
+                                a(href='../email-templates/password-reset.html') Reset Pwd
+                    li
+                        a(href='lightbox.html') Lightbox Popup
+                    li
+                        a(href='treeview.html') Treeview
+                    li
+                        a(href='search-result.html') Search Result
+                    li
+                        a(href='utility-classes.html') Utility Classes
+                    li
+                        a(href='custom-scroll.html') Custom Scrolls
+                    li
+                        a(href='login.html') Login Page
+                    li
+                        a(href='login2.html') Login v2
+                    li
+                        a(href='animation.html') Animations
+                    li
+                        a(href='profile.html') Profile
+                    li
+                        a(href='invoice.html') Invoice
+                    li
+                        a(href='faq.html') FAQ
+                    li
+                        a(href='gallery.html') Gallery
+                    li
+                        a(href='pricing.html') Pricing
+                    li
+                        a(href='register.html') Register
+                    li
+                        a(href='register2.html') Register v2
+                    li
+                        a(href='register3.html') 3 Step Registration
+                    li
+                        a(href='recoverpw.html') Recover Password
+                    li
+                        a(href='lock-screen.html') Lock Screen
+                    li
+                        a(href='400.html') Error 400
+                    li
+                        a(href='403.html') Error 403
+                    li
+                        a(href='404.html') Error 404
+                    li
+                        a(href='500.html') Error 500
+                    li
+                        a(href='503.html') Error 503
+            li
+                a.waves-effect(href='#')
+                    i.linea-icon.linea-basic.fa-fw(data-icon='')
+                    span.hide-menu
+                        | Charts
+                        span.fa.arrow
+                ul.nav.nav-second-level
+                    li
+                        a(href='flot.html') Flot Charts
+                    li
+                        a(href='morris-chart.html') Morris Chart
+                    li
+                        a(href='chart-js.html') Chart-js
+                    li
+                        a(href='peity-chart.html') Peity Charts
+                    li
+                        a(href='knob-chart.html') Knob Charts
+                    li
+                        a(href='sparkline-chart.html') Sparkline charts
+                    li
+                        a(href='extra-charts.html') Extra Charts
+            li
+                a.waves-effect(href='tables.html')
+                    i.linea-icon.linea-software.fa-fw(data-icon='O')
+                    span.hide-menu
+                        | Tables
+                        span.fa.arrow
+                        span.label.label-rouded.label-danger.pull-right 7
+                ul.nav.nav-second-level
+                    li
+                        a(href='basic-table.html') Basic Tables
+                    li
+                        a(href='table-layouts.html') Table Layouts
+                    li
+                        a(href='data-table.html') Data Table
+                    li.hidden
+                        a(href='crud-table.html') Crud Table
+                    li
+                        a(href='bootstrap-tables.html') Bootstrap Tables
+                    li
+                        a(href='responsive-tables.html') Responsive Tables
+                    li
+                        a(href='editable-tables.html') Editable Tables
+                    li
+                        a(href='foo-tables.html') FooTables
+                    li
+                        a(href='jsgrid.html') JsGrid Tables
+            li
+                a.waves-effect(href='widgets.html')
+                    i.linea-icon.linea-basic.fa-fw(data-icon='P')
+                    span.hide-menu Widgets
+            li
+                a.waves-effect(href='#')
+                    i.linea-icon.linea-basic.fa-fw(data-icon='7')
+                    span.hide-menu
+                        | Icons
+                        span.fa.arrow
+                ul.nav.nav-second-level
+                    li
+                        a(href='fontawesome.html') Font awesome
+                    li
+                        a(href='themifyicon.html') Themify Icons
+                    li
+                        a(href='simple-line.html') Simple line Icons
+                    li
+                        a(href='linea-icon.html') Linea Icons
+                    li
+                        a(href='weather.html') Weather Icons
+            li
+                a.waves-effect(href='map-google.html')
+                    i.linea-icon.linea-basic.fa-fw(data-icon='Q')
+                    span.hide-menu Google Map
+            li
+                a.waves-effect(href='map-vector.html')
+                    i.linea-icon.linea-basic.fa-fw(data-icon='S')
+                    span.hide-menu Vector Map
+            li
+                a.waves-effect(href='calendar.html')
+                    i.linea-icon.linea-elaborate.fa-fw(data-icon='A')
+                    span.hide-menu Calendar
+            li
+                a.waves-effect(href='javascript:void(0)')
+                    i.linea-icon.linea-software.fa-fw(data-icon='F')
+                    span.hide-menu
+                        | Multi-Level Dropdown
+                        span.fa.arrow
+                ul.nav.nav-second-level
+                    li
+                        a(href='javascript:void(0)') Second Level Item
+                    li
+                        a(href='javascript:void(0)') Second Level Item
+                    li
+                        a.waves-effect(href='javascript:void(0)')
+                            | Third Level
+                            span.fa.arrow
+                        ul.nav.nav-third-level
+                            li
+                                a(href='javascript:void(0)') Third Level Item
+                            li
+                                a(href='javascript:void(0)') Third Level Item
+                            li
+                                a(href='javascript:void(0)') Third Level Item
+                            li
+                                a(href='javascript:void(0)') Third Level Item
+            li
+                a.waves-effect(href='login.html')
+                    i.icon-logout.fa-fw
+                    span.hide-menu Log out
+            li.nav-small-cap --- Support
+            li
+                a.waves-effect(href='documentation.html')
+                    i.fa.fa-circle-o.text-danger
+                    span.hide-menu Documentation
+            li
+                a.waves-effect(href='gallery.html')
+                    i.fa.fa-circle-o.text-info
+                    span.hide-menu Gallery
+            li
+                a.waves-effect(href='faq.html')
+                    i.fa.fa-circle-o.text-success
+                    span.hide-menu Faqs
+// Left navbar-header end
+// Page Content-->

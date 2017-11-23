@@ -1,0 +1,104 @@
+doctype html
+html(lang='en')
+    include header
+
+    head
+        title Call Center || User Profile
+    body
+        // Preloader
+        .preloader
+            .cssload-speeding-wheel
+
+        //content
+        #wrapper
+
+            include top
+            include sidebar
+
+            // Page Content
+            #page-wrapper
+                .container-fluid
+                    .row.bg-title
+                        .col-lg-3.col-md-4.col-sm-4.col-xs-12
+                            h4.page-title Main Dashboard
+                        .col-lg-9.col-sm-8.col-md-8.col-xs-12
+                            ol.breadcrumb
+                                li
+                                    a(href='#') Dashboard
+                                li.active Main Dashboard
+                    .row
+                        .col-md-12
+                            .white-box
+                                ul.timeline
+                                    li
+                                        .timeline-badge.success
+                                            img.img-responsive(alt='user', src='plugins/images/users/genu.jpg')
+                                        .timeline-panel
+                                            .timeline-heading
+                                                h4.timeline-title Genelia
+                                                p
+                                                    small.text-muted
+                                                        i.fa.fa-clock-o
+                                                        |  11 hours ago via Twitter
+                                            .timeline-body
+                                                p
+                                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.
+                                    li.timeline-inverted
+                                        .timeline-badge.warning
+                                            img.img-responsive(alt='user', src='plugins/images/users/ritesh.jpg')
+                                        .timeline-panel
+                                            .timeline-heading
+                                                h4.timeline-title Ritesh Deshmukh
+                                            .timeline-body
+                                                p
+                                                    img.img-responsive(alt='user', src='plugins/images/big/img1.jpg')
+                                                p
+                                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.
+                                    li
+                                        .timeline-badge.danger
+                                            i.fa.fa-bomb
+                                        .timeline-panel
+                                            .timeline-heading
+                                                h4.timeline-title Lorem ipsum dolor
+                                            .timeline-body
+                                                p
+                                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.
+                                    li.timeline-inverted
+                                        .timeline-panel
+                                            .timeline-heading
+                                                h4.timeline-title Lorem ipsum dolor
+                                            .timeline-body
+                                                p
+                                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!
+                                    li
+                                        .timeline-badge.info
+                                            i.fa.fa-save
+                                        .timeline-panel
+                                            .timeline-heading
+                                                h4.timeline-title Lorem ipsum dolor
+                                            .timeline-body
+                                                p
+                                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.
+                                                hr
+                                                .btn-group
+                                                    button.btn.btn-primary.btn-sm.dropdown-toggle(type='button', data-toggle='dropdown', aria-expanded='false')
+                                                        i.fa.fa-gear
+                                                        span.caret
+                                                    ul.dropdown-menu(role='menu')
+                                                        li
+                                                            a(href='#') edit
+
+                                    li.timeline-inverted
+                                        .timeline-badge.success
+                                            i.fa.fa-graduation-cap
+                                        .timeline-panel
+                                            .timeline-heading
+                                                h4.timeline-title Lorem ipsum dolor
+                                            .timeline-body
+                                                p
+                                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati, quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque eaque.
+
+                footer.footer.text-center  2017 ©
+            // /#page-wrapper
+
+        include footer

@@ -1,0 +1,49 @@
+Hello
+
+Now I am willing to show and explain to you my React/Redux app through sharing my screen so that you can confirm my skill.
+Really, I am very familiar with Redux/Mobx/Flux etc and I always use Redux with React app.
+
+Do you want to Redux with Reactjs?
+
+And I have enough experience in redux middlewares such as Redux-thunk and Redux-saga for side effect(Async API calling),Jest,Jasmine,Mocha,Chai for test,JSlint, Eslint,ES6/7,JSX,React-router,immutable.js etc. And  I am very versed in tools such Gulp,Webpack,Babel,Bower etc.
+
+And what UI framework do you want to use in React/Redux app?
+
+Really, I have already finished several POC,dashboard,PWA,Medical app,Educational app,HealCare Apps etc using React/Redux.
+
+Also,I have good UI design skill and keen eye in UI
+So I always make sleek and graceful looks and feeling, not decent look. Perhaps, I think,you will be surprised with my UI work.
+
+Really, Material UI or SemanticUI are best for React App because they support React Components.
+And MaterialUI is preferred than SemanticUI because it supports more components than SemanticUI.
+
+My recent work:
+http://stock.melbournescheapestvans.com.au/
+https://donde.co/
+http://www.feedmeeapp.com
+Https:/reclaimyou.com
+https://landed.com
+https://www.vention.io
+https://www.megamarket.am/
+https://beta.sightlinemaps.com/
+http://halalplates-production.herokuapp.com/#/ MERN
+
+**What I guarantee are just High Code Quality and Fast Deliverable.
+I always focus on writing the clean, optimized and scalable code easy to read and maintain..
+I can do daily communication with you and will report my good work result to you daily.
+
+**Anyway, I don't want to brag and write about myself anymore here and will show my skill in my real work. Ok?
+
+I am always very creative,passionate and ambitious in my project,so hope you will be satisfied with my fast work result.
+Looking forward to hearing from you soon.
+
+Best regards.
+
+https://www.darwinex.com(React + Styled-components)
+https://www.helpwith.co/ (React + Meteor + Node)
+edutailors.com
+https://business.websites.ca/
+https://websites.ca/
+https://github.com/coetry/ammar-selo-photography
+
+

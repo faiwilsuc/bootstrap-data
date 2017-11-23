@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><meta name="author" content=""><link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png"><title>Call Center || Add Activity</title><!-- Bootstrap Core CSS--><link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"><link href="plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet"><!-- Menu CSS--><link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet"><!-- Wizard CSS--><link href="plugins/bower_components/jquery-wizard-master/css/wizard.css" rel="stylesheet"><!-- animation CSS--><link href="css/animate.css" rel="stylesheet"><!-- Custom CSS--><link href="css/style.css" rel="stylesheet"><!--link(href='plugins/bower_components/bootstrap-select/bootstrap-select.min.css', rel='stylesheet')--><!-- color CSS--><link id="theme" href="css/colors/default-dark.css" rel="stylesheet"><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries--><!-- WARNING: Respond.js doesn't work if you view the page via file://--><!--if lt IE 9script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')--></head><body class="fix-sidebar"><!-- Preloader--><div class="preloader"><div class="cssload-speeding-wheel"></div></div><div id="wrapper"><div role="navigation" class="navbar-default sidebar"><div class="sidebar-nav navbar-collapse slimscrollsidebar"><div class="user-profile"><div class="dropdown user-pro-body"><div><img src="./plugins/images/users/varun.jpg" alt="user-img" class="img-circle"></div><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle u-dropdown">Steave Gection<span class="caret"></span></a><ul class="dropdown-menu animated flipInY"><li><a href="#"><i class="ti-user"></i> My Profile</a></li><li role="separator" class="divider"></li><li><a href="#"><i class="ti-settings"></i> Account Setting</a></li><li role="separator" class="divider"></li><li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li></ul></div></div><ul id="side-menu" class="nav"><li class="sidebar-search hidden-sm hidden-md hidden-lg"><!-- input-group--><div class="input-group custom-search-form"><input type="text" placeholder="Search..." class="form-control"><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-search"></i></button></span></div><!-- /input-group--></li><li class="nav-small-cap m-t-10">--- Main Menu</li><li><a href="index.html" class="waves-effect active"><i class="linea-icon linea-basic fa-fw ti-dashboard"></i><span class="hide-menu">Dashboard<span class="label label-rouded label-custom pull-right">4</span></span></a></li><!--user profile--><li class="nav-small-cap m-t-10">--User</li><li><a href="userprofile.html" class="waves-effect"><i class="fa-fw ti-user"></i><span class="hide-menu">My Profile</span></a></li><li><a href="newuser.html" class="waves-effect"><i class="fa-fw ti-layers"></i><span class="hide-menu">New Admin</span></a></li><li><a href="userhistory.html" class="waves-effect"><i class="fa-fw ti-timer"></i><span class="hide-menu">Admin  History</span></a></li><li class="nav-small-cap m-t-10">--People</li><li><a href="newpeople.html" class="waves-effect"><i class="fa-fw ti-user"></i><span class="hide-menu">New person</span></a></li><li><a href="managepeople.html" class="waves-effect"><i class="fa-fw ti-layers-alt"></i><span class="hide-menu">Manage Persons</span></a></li><li class="nav-small-cap m-t-10">--Activity</li><li><a href="addactivity.html" class="waves-effect"><i class="fa-fw ti-check"></i><span class="hide-menu">Add Activity</span></a></li><li><a href="manage_activty.html" class="waves-effect"><i class="fa-fw ti-check"></i><span class="hide-menu">Manage Activty</span></a></li><li class="nav-small-cap m-t-10">--Report</li><li><a href="report.html" class="waves-effect"><i class="fa-fw ti-blackboard"></i><span class="hide-menu">Report</span></a></li><li class="nav-small-cap m-t-10">-Logout</li><li><a href="login.html" class="waves-effect"><i class="icon-logout fa-fw"></i><span class="hide-menu">Log out</span></a></li></ul></div></div><nav class="navbar navbar-default navbar-static-top m-b-0"><div class="navbar-header"><a href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle hidden-sm hidden-md hidden-lg"><i class="ti-menu"></i></a><div class="top-left-part"><a href="index.html" style="text-align: center;" class="logo"><b></b></a></div><ul class="nav navbar-top-links navbar-left hidden-xs"><li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li><li><form role="search" class="app-search hidden-xs"><input type="text" placeholder="Search..." class="form-control"><a href=""><i class="fa fa-search"></i></a></form></li></ul></div></nav><!-- Page Content--><div id="page-wrapper"><div class="container-fluid"><div class="row bg-title"><div class="col-lg-3 col-md-4 col-sm-4 col-xs-12"><h4 class="page-title">New User</h4></div><div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"><ol class="breadcrumb"><li><a href="index.html">Dashboard</a></li><li class="active">Add Activity</li></ol></div></div><div class="row"><div class="col-sm-12"><div class="white-box"><h3 class="box-title m-b-0">Add Activity</h3><p class="text-muted m-b-30 font-13"> Please Complete Full User Information</p><div id="exampleValidator" class="wizard"><ul role="tablist" class="wizard-steps"><li role="tab" class="active"><h4><span><i class="ti-credit-card"></i></span>Activity Type</h4></li><li role="tab"><h4><span><i class="ti-check"></i></span>How In these Activity</h4></li><li role="tab"><h4><span><i class="ti-credit-card"></i></span>About</h4></li></ul><form id="validation" class="form-horizontal"><div class="wizard-content"><div role="tabpanel" class="wizard-pane active"><div class="form-group"><label class="col-xs-3 control-label">Activty Type</label><div class="col-xs-12"><select data-style="form-control" class="selectpicker"><option>hashtag</option><option>facebook</option><option>telegram</option><option>other</option></select></div></div></div><div role="tabpanel" class="wizard-pane"><div class="form-group"><label class="col-xs-3 control-label">user search</label><div class="col-xs-5"><input type="text" name="email" class="form-control"></div></div></div><div role="tabpanel" class="wizard-pane"><div class="form-group"><label class="col-xs-3 control-label">about</label><div class="col-xs-5"></div></div></div></div></form></div></div></div></div></div></div></div><!-- jQuery--><script src="plugins/bower_components/jquery/dist/jquery.min.js"></script><!-- Bootstrap Core JavaScript--><script src="bootstrap/dist/js/tether.min.js"></script><script src="bootstrap/dist/js/bootstrap.min.js"></script><script src="plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script><!-- Menu Plugin JavaScript--><script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script><!-- slimscroll JavaScript--><script src="js/jquery.slimscroll.js"></script><!-- Wave Effects--><script src="js/waves.js"></script><!-- Form Wizard JavaScript--><script src="plugins/bower_components/jquery-wizard-master/dist/jquery-wizard.min.js"></script><!-- FormValidation--><link rel="stylesheet" href="plugins/bower_components/jquery-wizard-master/libs/formvalidation/formValidation.min.css"><!-- FormValidation plugin and the class supports validating Bootstrap form--><script src="plugins/bower_components/jquery-wizard-master/libs/formvalidation/formValidation.min.js"></script><script src="plugins/bower_components/jquery-wizard-master/libs/formvalidation/bootstrap.min.js"></script><!-- Custom Theme JavaScript--><script src="js/custom.min.js"></script><script type="text/javascript">(function() {
+    $('#exampleBasic').wizard({
+        onFinish: function() {
+            alert('finish');
+        }
+    });
+    $('#exampleBasic2').wizard({
+        onFinish: function() {
+            alert('finish');
+        }
+    });
+    $('#exampleValidator').wizard({
+        onInit: function() {
+            $('#validation').formValidation({
+                framework: 'bootstrap',
+                fields: {
+                    username: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The username is required'
+                            },
+                            stringLength: {
+                                min: 6,
+                                max: 30,
+                                message: 'The username must be more than 6 and less than 30 characters long'
+                            },
+                            regexp: {
+                                regexp: /^[a-zA-Z0-9_\\.]+$/,
+                                message: 'The username can only consist of alphabetical, number, dot and underscore'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The email address is required'
+                            },
+                            emailAddress: {
+                                message: 'The input is not a valid email address'
+                            }
+                        }
+                    },
+                    password: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The password is required'
+                            },
+                            different: {
+                                field: 'username',
+                                message: 'The password cannot be the same as username'
+                            }
+                        }
+                    }
+                }
+            });
+        },
+        validator: function() {
+            var fv = $('#validation').data('formValidation');
+            var $this = $(this);
+            // Validate the container
+            fv.validateContainer($this);
+            var isValidStep = fv.isValidContainer($this);
+            if (isValidStep === false || isValidStep === null) {
+                return false;
+            }
+            return true;
+        },
+        onFinish: function() {
+            $('#validation').submit();
+            alert('finish');
+        }
+    });
+    $('#accordion').wizard({
+        step: '[data-toggle="collapse"]',
+        buttonsAppendTo: '.panel-collapse',
+        templates: {
+            buttons: function() {
+                var options = this.options;
+                return '<div class="panel-footer"><ul class="pager">' + '<li class="previous">' + '<a href="#' + this.id + '" data-wizard="back" role="button">' + options.buttonLabels.back + '</a>' + '</li>' + '<li class="next">' + '<a href="#' + this.id + '" data-wizard="next" role="button">' + options.buttonLabels.next + '</a>' + '<a href="#' + this.id + '" data-wizard="finish" role="button">' + options.buttonLabels.finish + '</a>' + '</li>' + '</ul></div>';
+            }
+        },
+        onBeforeShow: function(step) {
+            step.$pane.collapse('show');
+        },
+        onBeforeHide: function(step) {
+            step.$pane.collapse('hide');
+        },
+        onFinish: function() {
+            alert('finish');
+        }
+    });
+})();</script><!-- Style Switcher--><script src="plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script></body></html>

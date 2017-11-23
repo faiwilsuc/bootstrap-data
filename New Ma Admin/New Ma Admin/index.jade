@@ -1,0 +1,172 @@
+doctype html
+html(lang='en')
+    include header
+
+    head
+        title Call Center || Dashboard
+
+    body
+        // Preloader
+        .preloader
+            .cssload-speeding-wheel
+        #wrapper
+            // Navigation
+            include top
+            include sidebar
+            #page-wrapper
+                .container-fluid
+                    .row.bg-title
+                        .col-lg-3.col-md-4.col-sm-4.col-xs-12
+                            h4.page-title Main Dashboard
+                        .col-lg-9.col-sm-8.col-md-8.col-xs-12
+                            ol.breadcrumb
+                                li
+                                    a(href='index.html') Dashboard
+
+                        // /.col-lg-12
+                    // /.row
+                    include Social_ number_count
+                    // /.row
+                    .row
+                        .col-md-12
+                            .white-box
+                                h3.box-title Users Across The States
+                                .row
+                                    .col-md-12.col-lg-8
+                                        #world-map-marker(style='height: 490px;')
+                                    .col-md-12.col-lg-4
+                                        ul.country-state.slimscrollcountry
+                                            li
+                                                h2 350
+                                                small From Basrah
+                                                .pull-right
+                                                    | 80%
+                                                    i.text-success
+                                                .progress
+                                                    .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100', style='width:80%;')
+                                                        span.sr-only 80% Complete
+                                            li
+                                                h2 100
+                                                small From Karbala
+                                                .pull-right
+                                                    | 100%
+                                                    i.text-success
+                                                .progress
+                                                    .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100', style='width:100%;')
+                                                        span.sr-only 100% Complete
+
+                                            li
+                                                h2 350
+                                                small From Baghdad
+                                                .pull-right
+                                                    | 100%
+                                                    i.text-success
+                                                .progress
+                                                    .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100', style='width:100%;')
+                                                        span.sr-only 100% Complete
+                                            li
+                                                h2 50
+                                                small From Mesan
+                                                .pull-right
+                                                    | 20%
+                                                    i.text-success
+                                                .progress
+                                                    .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100', style='width:20%;')
+                                                        span.sr-only 20% Complete
+
+
+
+
+
+                                        .row
+                                            .col-md-4.col-sm-4.col-xs-12.m-t-20.text-center
+                                                .chart.easy-pie-chart-2(data-percent='75')
+                                                    span.percent 75
+                                                    br
+                                                    h4 Total User
+
+                    // row
+                    .row
+                        //table
+                        .col-sm-6
+                            .white-box
+                                h3.box-title Best Admins
+                                p.text-muted
+                                    | best six admin that has a points
+
+                                .table-responsive
+                                    table.table.table-hover
+                                        thead
+                                            tr
+                                                th ID
+                                                th Full Name
+                                                th City
+                                                th State
+                                                th points
+                                        tbody
+                                            tr
+                                                td 1
+                                                td Milk Powder
+                                                td Baghdad
+                                                td Sader
+                                                td 1,500
+                                            tr
+                                                td 2
+                                                td Milk Powder
+                                                td Baghdad
+                                                td Sader
+                                                td 1,500
+                                            tr
+                                                td 3
+                                                td Milk Powder
+                                                td Baghdad
+                                                td Sader
+                                                td 1,500
+                                            tr
+                                                td 4
+                                                td Milk Powder
+                                                td Baghdad
+                                                td Sader
+                                                td 1,500
+                                            tr
+                                                td 5
+                                                td Milk Powder
+                                                td Baghdad
+                                                td Sader
+                                                td 1,500
+                                            tr
+                                                td 6
+                                                td Milk Powder
+                                                td Baghdad
+                                                td Sader
+                                                td 1,500
+
+
+
+
+
+
+
+
+                        //chart
+                        .col-md-6.col-sm-12.col-xs-12
+                            .white-box
+                                h3.box-title Site visit Chart
+                                ul.list-inline.text-right
+                                    li
+                                        h5
+                                            i.fa.fa-circle.m-r-5(style='color: #00bfc7;')
+                                            | Site A View
+                                    li
+                                        h5
+                                            i.fa.fa-circle.m-r-5(style='color: #fdc006;')
+                                            | Site B View
+                                #morris-area-chart2
+
+                footer.footer.text-center  2017 ©
+
+            include footer
+
+
+
+

@@ -1,0 +1,309 @@
+/* responsive styles for laptop */
+@media (max-width:1199px){
+.container{ width:98%;}
+.logo{ padding-left:0;}
+.main_nav{ width:auto; padding:41px 10px 42px 0;}
+.search input{ width:86%;}
+.search > a{ padding:12px 14px;}
+.about_us{
+	padding: 53px 16px 50px;
+}
+.left_content{
+	padding-left: 10px;
+}
+.my_location_info > p{
+	font-size: 14px;
+	line-height: 18px;
+}
+.all_attraction h4{
+	font-size: 30px;
+	line-height: 34px;
+}
+.post_content {
+	padding-right: 38px;
+}
+.attraction_post{
+	padding-left: 45px;
+}
+.post_head{
+	font-size: 23px;
+	line-height: 27px;
+}
+
+
+.right-content h2 {
+  font-size: 25px;
+  line-height: 26px;
+}
+
+.left_content1{ margin-left:0;}
+
+/****************** RESULT PAGE STARTS HERE *********************/
+.result_main .container{width:94%;}
+.result_main_bottom{ width:100%;}
+.attraction1{ width:100%;}
+.attraction_right {
+    width: 70%;
+    margin: 0 0 0 13px;
+}
+}
+@media (max-width:823px){
+.main_nav li{ padding-right:17px;}
+}
+@media (max-width:992px){
+.about_us h5{
+	font-size: 22px;
+	line-height: 26px;
+}
+.about_us label{
+	font-size: 16px;
+	line-height: 20px;
+}
+.about_us > img{
+	padding: 13px 10px;
+}
+.about_us input{
+	font-size: 14px;
+	line-height: 18px;
+}
+.about_us a{
+	width: 200px;
+	font-size: 12px;
+	line-height: 16px;
+}
+.left_content_width{
+	padding-right: 30px;
+}
+.my_location_info > strong{
+	font-size: 14px;
+	line-height: 18px;
+}
+.my_location_info p a{
+	font-size: 14px;
+	line-height: 18px;
+}
+.all_attraction h4 {
+	font-size: 23px;
+	line-height: 27px;
+	padding-left: 20px;
+}
+.attraction_border{
+	padding-top: 0;
+}
+.post_content {
+	padding-right: 0;
+}
+.post_head {
+	font-size: 19px;
+	line-height: 23px;
+}
+.attraction_post label{
+	padding-right: 8px;
+}
+.location .location_info{
+	font-size: 12px;
+	line-height: 16px;
+}
+.attraction_post .culture{
+	font-size: 13px;
+	line-height: 17px;
+}
+.filters{
+	padding-left: 13px;
+}
+.filters p{
+	line-height: 18px;
+	font-size: 14px;
+}
+.filters > label{
+	line-height: 18px;
+	font-size: 14px;
+}
+.know_more > a{
+	line-height: 19px;
+	font-size: 15px;
+	width: 137px;
+}
+.coupan_img {
+	padding: 16px 27px;
+	top: -27px;
+}
+.more_about a{
+	font-size: 15px;
+	line-height: 19px;
+}
+
+.left_content_download {
+ 
+  width: 100%;
+}
+.left_content_doe_niet{
+	width: 100%;
+}
+.left_content_img{
+	text-align: center;
+}
+.left_content_img img{
+	display: inline-block;
+}
+.dagpas-drop-down{
+  margin-bottom: 98px;
+}
+.right-content {
+  padding-bottom: 0;
+}
+.inner-page-2 .col-lg-8.col-md-8.col-sm-12.col-xs-12 {
+  padding-top: 70px;
+}
+.brugge h4{ font-size:18px;}
+
+
+.result_main_bottom{ width:100%;}
+.result_main_bottom_left{ border:none !important;}
+}
+@media (max-width:767px){
+.header_top{ padding:15px 0;}
+.header_top_detail{ width:100%; float:none; display:none;}
+.nav_top{ float:none; padding:10px 0 0; border:none;}
+.nav_top li{ display:block; text-align:center; padding:0;}
+.area{ float:none; padding:0; border:none;}
+.meld{ float:none; padding:0;}
+.menu_icon {   width:26px; height:22px; background: url(../images/menu-sprite.png) no-repeat; display: block; cursor: pointer;background-size:cover; padding:0; margin: 0; position:absolute; top:5px; right:10px;}
+.search{ width:70%; float:left; margin:10px 0 0 10px;}
+.search input{ padding:5px 6px 5px 12px;}
+.search > a { padding: 7px 14px;}
+.logo a img{ width:50px; height:auto; max-width:inherit;}
+.main_nav{ width:100%; float:none; padding:0; margin:70px 0 0; display:none;}
+.main_nav li{ padding:0; display:block; text-align:right;}
+.main_nav li a{ padding:8px 15px; display:block;}
+.main_header{ position:relative; padding:0 0 10px;}
+.menu_icon1 {   width:26px; height:23px; background: url(../images/menu-sprite.png) no-repeat; display: block; cursor: pointer;background-size:cover; padding:0; margin: 0; position:absolute; top:17px; right:10px;}
+
+.events img{ display:block; width:30px; height:auto; padding:6px 0 0 0;}
+.events span{ font-size:12px; padding:0; display:block;}
+	.map iframe {
+    height: 300px;
+    width: 100%;
+}
+	.about_us{
+		width: 100%;
+		position: static;
+		padding: 10px 0 16px 0;
+	}
+	.left_content_width {
+    margin-top: 15px;
+	padding:0;
+	}
+
+	.left_content {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+}
+.attraction_width{
+	float: none;
+	padding: 0;
+	margin: 0 0 30px;
+}
+.attraction-left{
+	float: none !important;
+	padding:0;
+}
+.attraction-right{
+	float: none !important;
+	padding:0;
+}
+
+/****************** RESULT PAGE STARTS HERE *********************/
+.result_main .container{width:92%;}
+.result_main_left_info{ padding:0 0 0 20px;}
+.mariakerke_bad_img{ width:25px; height:25px; left:-33px;}
+.mariakerke_bad_img img{ width:16px; height:auto; padding:3px 0 0; background-size:cover;}
+.mariakerke_bad_img.block strong{ font-size:18px; padding:0;}
+.mariakerke_bad h3{ font-size:15px; padding:0;}
+.mariakerke_bad p{ font-size:14px;}
+.attraction_left{ width:46px; height:46px;}
+.attraction_left img{ width:40px; height:auto; background-size:cover;}
+.attraction_right{ margin:0 0 0 7px;}
+.adviseerds_block h5{ text-align:left; margin:0 11px 5px 0;}
+.list_txt{ margin:17px 0 0 -27px;}
+.list_txt>li{ padding:0 0 0 27px;}
+
+
+
+.result_main_bottom_left{ padding:10px 0 12px 12px;}
+.result_main_bottom_left h2{ font-size:18px;}
+.result_main_bottom_left p{ font-size:12px;}
+.result_main_bottom_left_img{ width:33px; margin:0 5px 0 0;}
+
+.brugge {
+	width: 100%;
+}
+/*waartekoop page styles end*/
+/*doeniet page*/
+.doe_niet h1 {
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.doe_niet h3 {
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+
+.doe_niet_hieronder ul li {
+font-size: 14px;
+}
+.onni_met_videos h3 {
+	font-size: 18px;
+}
+/*.left_content {
+	margin:0px 10px;
+}*/
+/*doeniet page style end*/
+.faq_accordion .panel-title {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 11px 10px;
+}
+.right_content h1 {
+    font-size: 27px;
+    line-height: 19px;
+}
+.right_content_lijnwinkels h3 {
+    font-size: 22px;
+margin-bottom: 26px;
+}
+.brugge h4 {
+    font-size:19px;
+}
+.panel-title a:before{ bottom:-17px;}
+}
+
+@media (max-width:420px){
+.post_head {
+    font-size: 15px;
+    line-height: 19px;
+}
+.attraction_post {
+    padding-left: 29px;
+}
+.post_image{ padding-left:23%;}
+.more_about a{
+	padding: 8px 0;
+	font-size: 12px;
+    line-height: 16px;
+}
+.more_about > a:last-child{
+	margin:0;
+}
+.more_about{
+	padding: 0;
+}
+
+.events img{width:26px; height:auto;}
+.events span{ font-size:9px;}
+}
+
+@media (min-width:768px){ .main_nav{ display:block !important;}.header_top_detail{ display:block !important;}}

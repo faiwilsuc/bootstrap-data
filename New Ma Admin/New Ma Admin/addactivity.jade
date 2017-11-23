@@ -1,0 +1,214 @@
+doctype html
+html(lang='en')
+    head
+
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        link(rel='icon', type='image/png', sizes='16x16', href='plugins/images/favicon.png')
+        title Call Center || Add Activity
+        // Bootstrap Core CSS
+        link(href='bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+        link(href='plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css', rel='stylesheet')
+        // Menu CSS
+        link(href='plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css', rel='stylesheet')
+        // Wizard CSS
+        link(href='plugins/bower_components/jquery-wizard-master/css/wizard.css', rel='stylesheet')
+        // animation CSS
+        link(href='css/animate.css', rel='stylesheet')
+        // Custom CSS
+        link(href='css/style.css', rel='stylesheet')
+        //link(href='plugins/bower_components/bootstrap-select/bootstrap-select.min.css', rel='stylesheet')
+
+        // color CSS
+        link#theme(href='css/colors/default-dark.css', rel='stylesheet')
+        // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+        // WARNING: Respond.js doesn't work if you view the page via file://
+        //if lt IE 9
+          script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+          script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    body.fix-sidebar
+        // Preloader
+        .preloader
+            .cssload-speeding-wheel
+
+        #wrapper
+            include sidebar
+            include top
+            // Page Content
+            #page-wrapper
+
+                .container-fluid
+                    .row.bg-title
+                        .col-lg-3.col-md-4.col-sm-4.col-xs-12
+                            h4.page-title New User
+                        .col-lg-9.col-sm-8.col-md-8.col-xs-12
+                            ol.breadcrumb
+                                li
+                                    a(href='index.html') Dashboard
+                                li.active Add Activity
+                    .row
+                        .col-sm-12
+                            .white-box
+                                h3.box-title.m-b-0 Add Activity
+                                p.text-muted.m-b-30.font-13  Please Complete Full User Information
+                                #exampleValidator.wizard
+                                    ul.wizard-steps(role='tablist')
+                                        li.active(role='tab')
+                                            h4
+                                                span
+                                                    i.ti-credit-card
+                                                | Activity Type
+                                        li(role='tab')
+                                            h4
+                                                span
+                                                    i.ti-check
+                                                | How In these Activity
+                                        li(role='tab')
+                                            h4
+                                                span
+                                                    i.ti-credit-card
+                                                | About
+                                    form#validation.form-horizontal
+                                        .wizard-content
+                                            .wizard-pane.active(role='tabpanel')
+                                                .form-group
+                                                    label.col-xs-3.control-label Activty Type
+                                                    .col-xs-12
+                                                        select.selectpicker(data-style='form-control')
+                                                            option hashtag
+                                                            option facebook
+                                                            option telegram
+                                                            option other
+
+                                            .wizard-pane(role='tabpanel')
+                                                .form-group
+                                                    label.col-xs-3.control-label user search
+                                                    .col-xs-5
+                                                        input.form-control(type='text', name='email')
+
+                                            .wizard-pane(role='tabpanel')
+                                                .form-group
+                                                    label.col-xs-3.control-label about
+                                                    .col-xs-5
+
+
+
+        // jQuery
+        script(src='plugins/bower_components/jquery/dist/jquery.min.js')
+        // Bootstrap Core JavaScript
+        script(src='bootstrap/dist/js/tether.min.js')
+        script(src='bootstrap/dist/js/bootstrap.min.js')
+        script(src='plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js')
+        // Menu Plugin JavaScript
+        script(src='plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js')
+        // slimscroll JavaScript
+        script(src='js/jquery.slimscroll.js')
+        // Wave Effects
+        script(src='js/waves.js')
+        // Form Wizard JavaScript
+        script(src='plugins/bower_components/jquery-wizard-master/dist/jquery-wizard.min.js')
+        // FormValidation
+        link(rel='stylesheet', href='plugins/bower_components/jquery-wizard-master/libs/formvalidation/formValidation.min.css')
+        // FormValidation plugin and the class supports validating Bootstrap form
+        script(src='plugins/bower_components/jquery-wizard-master/libs/formvalidation/formValidation.min.js')
+        script(src='plugins/bower_components/jquery-wizard-master/libs/formvalidation/bootstrap.min.js')
+        // Custom Theme JavaScript
+        script(src='js/custom.min.js')
+        script(type='text/javascript').
+            (function() {
+                $('#exampleBasic').wizard({
+                    onFinish: function() {
+                        alert('finish');
+                    }
+                });
+                $('#exampleBasic2').wizard({
+                    onFinish: function() {
+                        alert('finish');
+                    }
+                });
+                $('#exampleValidator').wizard({
+                    onInit: function() {
+                        $('#validation').formValidation({
+                            framework: 'bootstrap',
+                            fields: {
+                                username: {
+                                    validators: {
+                                        notEmpty: {
+                                            message: 'The username is required'
+                                        },
+                                        stringLength: {
+                                            min: 6,
+                                            max: 30,
+                                            message: 'The username must be more than 6 and less than 30 characters long'
+                                        },
+                                        regexp: {
+                                            regexp: /^[a-zA-Z0-9_\\.]+$/,
+                                            message: 'The username can only consist of alphabetical, number, dot and underscore'
+                                        }
+                                    }
+                                },
+                                email: {
+                                    validators: {
+                                        notEmpty: {
+                                            message: 'The email address is required'
+                                        },
+                                        emailAddress: {
+                                            message: 'The input is not a valid email address'
+                                        }
+                                    }
+                                },
+                                password: {
+                                    validators: {
+                                        notEmpty: {
+                                            message: 'The password is required'
+                                        },
+                                        different: {
+                                            field: 'username',
+                                            message: 'The password cannot be the same as username'
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    },
+                    validator: function() {
+                        var fv = $('#validation').data('formValidation');
+                        var $this = $(this);
+                        // Validate the container
+                        fv.validateContainer($this);
+                        var isValidStep = fv.isValidContainer($this);
+                        if (isValidStep === false || isValidStep === null) {
+                            return false;
+                        }
+                        return true;
+                    },
+                    onFinish: function() {
+                        $('#validation').submit();
+                        alert('finish');
+                    }
+                });
+                $('#accordion').wizard({
+                    step: '[data-toggle="collapse"]',
+                    buttonsAppendTo: '.panel-collapse',
+                    templates: {
+                        buttons: function() {
+                            var options = this.options;
+                            return '<div class="panel-footer"><ul class="pager">' + '<li class="previous">' + '<a href="#' + this.id + '" data-wizard="back" role="button">' + options.buttonLabels.back + '</a>' + '</li>' + '<li class="next">' + '<a href="#' + this.id + '" data-wizard="next" role="button">' + options.buttonLabels.next + '</a>' + '<a href="#' + this.id + '" data-wizard="finish" role="button">' + options.buttonLabels.finish + '</a>' + '</li>' + '</ul></div>';
+                        }
+                    },
+                    onBeforeShow: function(step) {
+                        step.$pane.collapse('show');
+                    },
+                    onBeforeHide: function(step) {
+                        step.$pane.collapse('hide');
+                    },
+                    onFinish: function() {
+                        alert('finish');
+                    }
+                });
+            })();
+        // Style Switcher
+        script(src='plugins/bower_components/styleswitcher/jQuery.style.switcher.js')

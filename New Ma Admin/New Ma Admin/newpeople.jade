@@ -1,0 +1,158 @@
+doctype html
+html(lang='en')
+    include header
+
+    head
+        title Call Center || New People
+    body
+        // Preloader
+        .preloader
+            .cssload-speeding-wheel
+
+        //content
+        #wrapper
+
+            include top
+            include sidebar
+
+            // Page Content
+            #page-wrapper
+                .container-fluid
+                    .row.bg-title
+                        .col-lg-3.col-md-4.col-sm-4.col-xs-12
+                            h4.page-title Main Dashboard
+                        .col-lg-9.col-sm-8.col-md-8.col-xs-12
+                            ol.breadcrumb
+                                li
+                                    a(href='#') Dashboard
+                                li.active New People
+                    .row
+
+                        .col-lg-2.col-sm-4.col-xs-12
+                            button.btn.btn-block.btn-success.btn-rounded Add New Feild
+
+                    .row
+                        .col-md-12
+                            .panel.panel-info
+                                .panel-heading  Create New Person Entry
+                                .panel-wrapper.collapse.in(aria-expanded='true')
+                                    .panel-body
+                                        form.form-horizontal.form-bordered(action='#')
+                                            .form-body
+                                                .form-group
+                                                    label.control-label.col-md-3 First Name
+                                                    .col-md-9
+                                                        input.form-control(type='text', placeholder='small')
+                                                        span.help-block  This is inline help
+                                                .form-group
+                                                    label.control-label.col-md-3 Last Name
+                                                    .col-md-9
+                                                        input.form-control(type='text', placeholder='medium')
+                                                        span.help-block  This is inline help
+                                                .form-group
+                                                    label.control-label.col-md-3 Gender
+                                                    .col-md-9
+                                                        select.form-control
+                                                            option(value='') Male
+                                                            option(value='') Female
+                                                        span.help-block  Select your gender.
+                                                .form-group
+                                                    label.control-label.col-md-3 Date of Birth
+                                                    .col-md-9
+                                                        input.form-control(type='text', placeholder='dd/mm/yyyy')
+                                                .form-group
+                                                    label.control-label.col-md-3 Category
+                                                    .col-md-9
+                                                        select.form-control
+                                                            option(value='Category 1') Category 1
+                                                            option(value='Category 2') Category 2
+                                                            option(value='Category 3') Category 5
+                                                            option(value='Category 4') Category 4
+                                                .form-group
+                                                    label.control-label.col-md-3 Multi-Value Select
+                                                    .col-md-9
+                                                        select.form-control(multiple='')
+                                                            optgroup(label='NFC EAST')
+                                                                option Dallas Cowboys
+                                                                option New York Giants
+                                                                option Philadelphia Eagles
+                                                                option Washington Redskins
+                                                            optgroup(label='NFC NORTH')
+                                                                option Chicago Bears
+                                                                option Detroit Lions
+                                                                option Green Bay Packers
+                                                                option Minnesota Vikings
+                                                            optgroup(label='NFC SOUTH')
+                                                                option Atlanta Falcons
+                                                                option Carolina Panthers
+                                                                option New Orleans Saints
+                                                                option Tampa Bay Buccaneers
+                                                            optgroup(label='NFC WEST')
+                                                                option Arizona Cardinals
+                                                                option St. Louis Rams
+                                                                option San Francisco 49ers
+                                                                option Seattle Seahawks
+                                                            optgroup(label='AFC EAST')
+                                                                option Buffalo Bills
+                                                                option Miami Dolphins
+                                                                option New England Patriots
+                                                                option New York Jets
+                                                            optgroup(label='AFC NORTH')
+                                                                option Baltimore Ravens
+                                                                option Cincinnati Bengals
+                                                                option Cleveland Browns
+                                                                option Pittsburgh Steelers
+                                                            optgroup(label='AFC SOUTH')
+                                                                option Houston Texans
+                                                                option Indianapolis Colts
+                                                                option Jacksonville Jaguars
+                                                                option Tennessee Titans
+                                                            optgroup(label='AFC WEST')
+                                                                option Denver Broncos
+                                                                option Kansas City Chiefs
+                                                                option Oakland Raiders
+                                                                option San Diego Chargers
+                                                .form-group
+                                                    label.control-label.col-md-3 Membership
+                                                    .col-md-9
+                                                        .radio-list
+                                                            label
+                                                                input(type='radio', name='optionsRadios2', value='option1')
+                                                                |  Free
+                                                            label
+                                                                input(type='radio', name='optionsRadios2', value='option2', checked='')
+                                                                |  Professional
+                                                .form-group
+                                                    label.control-label.col-md-3 Street
+                                                    .col-md-9
+                                                        input.form-control(type='text')
+                                                .form-group
+                                                    label.control-label.col-md-3 City
+                                                    .col-md-9
+                                                        input.form-control(type='text')
+                                                .form-group
+                                                    label.control-label.col-md-3 State
+                                                    .col-md-9
+                                                        input.form-control(type='text')
+                                                .form-group
+                                                    label.control-label.col-md-3 Post Code
+                                                    .col-md-9
+                                                        input.form-control(type='text')
+                                                .form-group.last
+                                                    label.control-label.col-md-3 Country
+                                                    .col-md-9
+                                                        select.form-control
+                                            .form-actions
+                                                .row
+                                                    .col-md-12
+                                                        .row
+                                                            .col-md-offset-3.col-md-9
+                                                                button.btn.btn-success(type='submit')
+                                                                    i.fa.fa-check
+                                                                    |  Submit
+                                                                button.btn.btn-default(type='button') Cancel
+
+                footer.footer.text-center  2017 © Oya Company || For Adv. And Trading
+            // /#page-wrapper
+
+        include footer

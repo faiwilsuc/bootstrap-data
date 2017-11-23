@@ -1,0 +1,95 @@
+doctype html
+html(lang='en')
+    include header
+    // Morris CSS
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js')
+
+
+
+    head
+        title Call Center || User Profile
+    body
+        // Preloader
+        .preloader
+            .cssload-speeding-wheel
+
+        //content
+        #wrapper
+
+            include top
+            include sidebar
+
+            // Page Content
+            #page-wrapper
+                .container-fluid
+                    .row.bg-title
+                        .col-lg-3.col-md-4.col-sm-4.col-xs-12
+                            h4.page-title Main Dashboard
+                        .col-lg-9.col-sm-8.col-md-8.col-xs-12
+                            ol.breadcrumb
+                                li
+                                    a(href='#') Dashboard
+                                li.active Main Dashboard
+                    .row
+
+
+                        .col-lg-4.col-md-12
+                            .white-box
+                                h3.box-title Last User Activity
+                                ul.feeds
+                                    li
+                                        .bg-info
+                                            i.ti-user.text-white
+                                        |  you add a new person
+                                        span.text-muted Just Now
+                                    li
+                                        .bg-info
+                                            i.ti-user.text-white
+                                        |  you add a new person
+                                        span.text-muted 1 Hours
+                                    li
+                                        .bg-info
+                                            i.ti-user.text-white
+                                        |  you add a new person
+                                        span.text-muted 2 Hours
+                                    li
+                                        .bg-purple
+                                            i.ti-settings.text-white
+                                        |  You change profile info
+                                        span.text-muted 27 May
+
+
+                        .col-md-6.col-lg-6.col-xs-12
+                            .white-box
+                                #myfirstchart(style='height: 250px;')
+
+
+
+                footer.footer.text-center  2017 ©
+            // /#page-wrapper
+
+        include footer
+         new Morris.Line({
+         // ID of the element in which to draw the chart.
+         element: 'myfirstchart',
+         // Chart data records -- each entry in this array corresponds to a point on
+         // the chart.
+         data: [
+         { year: '2008', value: 20 },
+         { year: '2009', value: 10 },
+         { year: '2010', value: 5 },
+         { year: '2011', value: 5 },
+         { year: '2012', value: 20 }
+         ],
+         // The name of the data record attribute that contains x-values.
+         xkey: 'year',
+         // A list of names of data record attributes that contain y-values.
+         ykeys: ['value'],
+         // Labels for the ykeys -- will be displayed when you hover over the
+         // chart.
+         labels: ['Value']
+         });
+

@@ -1,0 +1,91 @@
+<!--for edit--><!DOCTYPE html><html lang="en"><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><meta name="author" content=""><link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png"><!-- Bootstrap Core CSS--><link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"><link href="plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet"><link href="plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css"><link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css"><!-- Menu CSS--><link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet"><link rel="stylesheet" href="plugins/bower_components/dropify/dist/css/dropify.min.css"><link href="plugins/bower_components/jquery-wizard-master/css/wizard.css" rel="stylesheet"><!-- page CSS--><link href="plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css"><link href="plugins/bower_components/custom-select/custom-select.css" rel="stylesheet" type="text/css"><link href="plugins/bower_components/switchery/dist/switchery.min.css" rel="stylesheet"><link href="plugins/bower_components/bootstrap-select/bootstrap-select.min.css" rel="stylesheet"><link href="plugins/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet"><link href="plugins/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" rel="stylesheet"><link href="plugins/bower_components/multiselect/css/multi-select.css" rel="stylesheet" type="text/css"><!-- vector map CSS--><link href="plugins/bower_components/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"><link href="plugins/bower_components/css-chart/css-chart.css" rel="stylesheet"><link href="plugins/bower_components/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"><link href="plugins/bower_components/summernote/dist/summernote.css" rel="stylesheet"><!-- animation CSS--><link href="css/animate.css" rel="stylesheet"><!-- Custom CSS--><link href="css/style.css" rel="stylesheet"><!-- color CSS--><link id="theme" href="css/colors/default-dark.css" rel="stylesheet"><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script></head><title>Person Profile</title></head><body class="fix-sidebar"><!-- Preloader--><div class="preloader"><div class="cssload-speeding-wheel"></div></div><div id="wrapper"><nav class="navbar navbar-default navbar-static-top m-b-0"><div class="navbar-header"><a href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle hidden-sm hidden-md hidden-lg"><i class="ti-menu"></i></a><div class="top-left-part"><a href="index.html" style="text-align: center;" class="logo"><b></b></a></div><ul class="nav navbar-top-links navbar-left hidden-xs"><li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li><li><form role="search" class="app-search hidden-xs"><input type="text" placeholder="Search..." class="form-control"><a href=""><i class="fa fa-search"></i></a></form></li></ul></div></nav><div role="navigation" class="navbar-default sidebar"><div class="sidebar-nav navbar-collapse slimscrollsidebar"><div class="user-profile"><div class="dropdown user-pro-body"><div><img src="./plugins/images/users/varun.jpg" alt="user-img" class="img-circle"></div><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle u-dropdown">Steave Gection<span class="caret"></span></a><ul class="dropdown-menu animated flipInY"><li><a href="#"><i class="ti-user"></i> My Profile</a></li><li role="separator" class="divider"></li><li><a href="#"><i class="ti-settings"></i> Account Setting</a></li><li role="separator" class="divider"></li><li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li></ul></div></div><ul id="side-menu" class="nav"><li class="sidebar-search hidden-sm hidden-md hidden-lg"><!-- input-group--><div class="input-group custom-search-form"><input type="text" placeholder="Search..." class="form-control"><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-search"></i></button></span></div><!-- /input-group--></li><li class="nav-small-cap m-t-10">--- Main Menu</li><li><a href="index.html" class="waves-effect active"><i class="linea-icon linea-basic fa-fw ti-dashboard"></i><span class="hide-menu">Dashboard<span class="label label-rouded label-custom pull-right">4</span></span></a></li><!--user profile--><li class="nav-small-cap m-t-10">--User</li><li><a href="userprofile.html" class="waves-effect"><i class="fa-fw ti-user"></i><span class="hide-menu">My Profile</span></a></li><li><a href="newuser.html" class="waves-effect"><i class="fa-fw ti-layers"></i><span class="hide-menu">New Admin</span></a></li><li><a href="userhistory.html" class="waves-effect"><i class="fa-fw ti-timer"></i><span class="hide-menu">Admin  History</span></a></li><li class="nav-small-cap m-t-10">--People</li><li><a href="newpeople.html" class="waves-effect"><i class="fa-fw ti-user"></i><span class="hide-menu">New person</span></a></li><li><a href="managepeople.html" class="waves-effect"><i class="fa-fw ti-layers-alt"></i><span class="hide-menu">Manage Persons</span></a></li><li class="nav-small-cap m-t-10">--Activity</li><li><a href="addactivity.html" class="waves-effect"><i class="fa-fw ti-check"></i><span class="hide-menu">Add Activity</span></a></li><li><a href="manage_activty.html" class="waves-effect"><i class="fa-fw ti-check"></i><span class="hide-menu">Manage Activty</span></a></li><li class="nav-small-cap m-t-10">--Report</li><li><a href="report.html" class="waves-effect"><i class="fa-fw ti-blackboard"></i><span class="hide-menu">Report</span></a></li><li class="nav-small-cap m-t-10">-Logout</li><li><a href="login.html" class="waves-effect"><i class="icon-logout fa-fw"></i><span class="hide-menu">Log out</span></a></li></ul></div></div><div id="page-wrapper"><div class="container-fluid"><div class="row bg-title"><div class="col-lg-3 col-md-4 col-sm-4 col-xs-12"><h4 class="page-title">User Name Profile</h4></div><div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"><ol class="breadcrumb"><li><a href="index.html">Dashboard</a></li><li><a href="managepeople.html">Manage People</a></li><li class="active">Person Selected</li></ol></div><!-- /.col-lg-12--></div><!-- .row--><div class="row"><div class="col-sm-12"><div class="white-box"><h3 class="box-title m-b-0">X Jhon Wick Profile</h3><div class="row"><div class="col-md-12"><table id="user" style="clear: both" class="table table-bordered table-striped"><tbody><tr><td width="35%">Full Name</td><td width="65%"><a id="inline-fullname" href="#" data-type="text" data-pk="1" data-title="Enter Full Name">Jhon Wick</a></td></tr><tr><td width="35%">Full Email</td><td width="65%"><a id="inline-email" href="#" data-type="text" data-pk="1" data-title="Enter Email Address">Jhon-wick@gmail.com</a></td></tr><tr><td>City</td><td><a id="inline-city" href="#" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter the city">enter the city</a></td></tr><tr><td>State</td><td><a id="inline-state" href="#" data-type="text" data-pk="1" data-value="" data-title="Ente The State">Enter The State</a></td></tr><tr><td>Gender</td><td><a id="inline-sex" href="#" data-type="select" data-pk="1" data-value="" data-title="Select sex"></a></td></tr><tr><td>Combodate</td><td><a id="inline-dob" href="#" data-type="combodate" data-value="2015-09-24" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth"></a></td></tr></tbody></table></div></div><!--about-->
+</div></div></div></div><footer class="footer text-center"> 2017 © Oya Company || For Adv. And Trading</footer></div><!-- /#page-wrapper--></div><!-- /#wrapper--><!-- jQuery--><script src="plugins/bower_components/jquery/dist/jquery.min.js"></script><!-- Bootstrap Core JavaScript--><script src="bootstrap/dist/js/tether.min.js"></script><script src="bootstrap/dist/js/bootstrap.min.js"></script><script src="plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script><!-- Menu Plugin JavaScript--><script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script><!-- slimscroll JavaScript--><script src="js/jquery.slimscroll.js"></script><!-- Wave Effects--><script src="js/waves.js"></script><!-- Custom Theme JavaScript--><script src="js/custom.min.js"></script><!-- Dropzone Plugin JavaScript--><!-- jQuery x-editable--><script src="plugins/bower_components/moment/moment.js"></script><script src="../plugins/bower_components/summernote/dist/summernote.min.js"></script><script type="text/javascript" src="plugins/bower_components/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js"></script><script type="text/javascript">$(function() {
+    //editables
+
+    $('#gender').editable({
+        prepend: "not selected",
+        source: [{
+            value: 1,
+            text: 'Male'
+        }, {
+            value: 2,
+            text: 'Female'
+        }],
+        display: function(value, sourceData) {
+            var colors = {
+                    "": "#98a6ad",
+                    1: "#5fbeaa",
+                    2: "#5d9cec"
+                },
+                elem = $.grep(sourceData, function(o) {
+                    return o.value == value;
+                });
+            if (elem.length) {
+                $(this).text(elem[0].text).css("color", colors[value]);
+            } else {
+                $(this).empty();
+            }
+        }
+    });
+
+    $('#inline-fullname').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username',
+        title: 'Enter username',
+        mode: 'inline'
+    });
+
+    $('#inline-email').editable({
+        type: 'text',
+        pk: 1,
+        name: 'email',
+        title: 'Enter Email',
+        mode: 'inline'
+    });
+    $('#inline-dob').editable({
+        mode: 'inline'
+    });
+    $('#inline-city').editable({
+        type: 'text',
+        pk: 1,
+        name: 'city',
+        title: 'Enter City',
+        mode: 'inline'
+    });
+    $('#inline-state').editable({
+        type: 'text',
+        pk: 1,
+        name: 'status',
+        title: 'Enter Status',
+        mode: 'inline'
+    });
+
+    $('#inline-sex').editable({
+        prepend: "not selected",
+        mode: 'inline',
+        source: [{
+            value: 1,
+            text: 'Male'
+        }, {
+            value: 2,
+            text: 'Female'
+        }],
+        display: function(value, sourceData) {
+            var colors = {
+                    "": "#98a6ad",
+                    1: "#5fbeaa",
+                    2: "#5d9cec"
+                },
+                elem = $.grep(sourceData, function(o) {
+                    return o.value == value;
+                });
+            if (elem.length) {
+                $(this).text(elem[0].text).css("color", colors[value]);
+            } else {
+                $(this).empty();
+            }
+        }
+    });
+
+});</script></body></html>

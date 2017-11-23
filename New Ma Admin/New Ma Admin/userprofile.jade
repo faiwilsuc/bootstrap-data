@@ -1,0 +1,232 @@
+//for edit
+doctype html
+html(lang='en')
+    head
+
+        include header
+
+        title Person Profile
+    body.fix-sidebar
+        // Preloader
+        .preloader
+            .cssload-speeding-wheel
+        #wrapper
+            include top
+            include sidebar
+            #page-wrapper
+                .container-fluid
+                    .row.bg-title
+                        .col-lg-3.col-md-4.col-sm-4.col-xs-12
+                            h4.page-title User Name Profile
+                        .col-lg-9.col-sm-8.col-md-8.col-xs-12
+                            ol.breadcrumb
+                                li
+                                    a(href='index.html') Dashboard
+                                li
+                                    a(href='managepeople.html') Manage People
+                                li.active Person Selected
+                        // /.col-lg-12
+                    // .row
+                    .row
+                        .col-sm-12
+                            .white-box
+                                h3.box-title.m-b-0 Jhon Wick Profile
+
+                                .row
+                                    .col-md-12
+                                        table#user.table.table-bordered.table-striped(style='clear: both')
+                                            tbody
+                                                tr
+                                                    td(width='35%') Full Name
+                                                    td(width='65%')
+                                                        a#inline-fullname(href='#', data-type='text', data-pk='1', data-title='Enter Full Name') Jhon Wick
+                                                tr
+                                                    td(width='35%')  Email
+                                                    td(width='65%')
+                                                        a#inline-email(href='#', data-type='text', data-pk='1', data-title='Enter Email Address') Jhon-wick@gmail.com
+                                                tr
+                                                    td City
+                                                    td
+                                                        a#inline-city(href='#', data-type='text', data-pk='1', data-placement='right', data-placeholder='Required', data-title='Enter the city') enter the city
+                                                tr
+                                                    td State
+                                                    td
+                                                        a#inline-state(href='#', data-type='text', data-pk='1', data-value='', data-title='Ente The State') Enter The State
+
+                                                tr
+                                                    td Gender
+                                                    td
+                                                        a#inline-sex(href='#', data-type='select', data-pk='1', data-value='', data-title='Select sex')
+
+                                                tr
+                                                    td Date
+                                                    td
+                                                        a#inline-dob(href='#', data-type='combodate', data-value='2015-09-24', data-format='YYYY-MM-DD', data-viewformat='DD/MM/YYYY', data-template='D / MMM / YYYY', data-pk='1', data-title='Select Date of birth')
+                                .row
+
+
+
+
+                                //about
+
+
+                footer.footer.text-center  2017 ©
+            // /#page-wrapper
+        // /#wrapper
+        // jQuery
+        include footer
+        script(src='plugins/bower_components/jquery/dist/jquery.min.js')
+        // Bootstrap Core JavaScript
+        script(src='bootstrap/dist/js/tether.min.js')
+        script(src='bootstrap/dist/js/bootstrap.min.js')
+        script(src='plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js')
+        // Menu Plugin JavaScript
+        script(src='plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js')
+        // slimscroll JavaScript
+        script(src='js/jquery.slimscroll.js')
+        // Wave Effects
+        script(src='js/waves.js')
+        // Custom Theme JavaScript
+        script(src='js/custom.min.js')
+        // Dropzone Plugin JavaScript
+        // jQuery x-editable
+        script(src='plugins/bower_components/moment/moment.js')
+        script(src = 'plugins/bower_components/summernote/dist/summernote.min.js')
+        script(src='plugins/bower_components/dropify/dist/js/dropify.min.js')
+        script(type='text/javascript', src='plugins/bower_components/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js')
+        script(type='text/javascript').
+
+            $(function() {
+                //editables
+
+                $('#gender').editable({
+                    prepend: "not selected",
+                    source: [{
+                        value: 1,
+                        text: 'Male'
+                    }, {
+                        value: 2,
+                        text: 'Female'
+                    }],
+                    display: function(value, sourceData) {
+                        var colors = {
+                                "": "#98a6ad",
+                                1: "#5fbeaa",
+                                2: "#5d9cec"
+                            },
+                            elem = $.grep(sourceData, function(o) {
+                                return o.value == value;
+                            });
+                        if (elem.length) {
+                            $(this).text(elem[0].text).css("color", colors[value]);
+                        } else {
+                            $(this).empty();
+                        }
+                    }
+                });
+
+                $('#inline-fullname').editable({
+                    type: 'text',
+                    pk: 1,
+                    name: 'username',
+                    title: 'Enter username',
+                    mode: 'inline'
+                });
+
+                $('#inline-email').editable({
+                    type: 'text',
+                    pk: 1,
+                    name: 'email',
+                    title: 'Enter Email',
+                    mode: 'inline'
+                });
+                $('#inline-dob').editable({
+                    mode: 'inline'
+                });
+                $('#inline-city').editable({
+                    type: 'text',
+                    pk: 1,
+                    name: 'city',
+                    title: 'Enter City',
+                    mode: 'inline'
+                });
+                $('#inline-state').editable({
+                    type: 'text',
+                    pk: 1,
+                    name: 'status',
+                    title: 'Enter Status',
+                    mode: 'inline'
+                });
+
+                $('#inline-sex').editable({
+                    prepend: "not selected",
+                    mode: 'inline',
+                    source: [{
+                        value: 1,
+                        text: 'Male'
+                    }, {
+                        value: 2,
+                        text: 'Female'
+                    }],
+                    display: function(value, sourceData) {
+                        var colors = {
+                                "": "#98a6ad",
+                                1: "#5fbeaa",
+                                2: "#5d9cec"
+                            },
+                            elem = $.grep(sourceData, function(o) {
+                                return o.value == value;
+                            });
+                        if (elem.length) {
+                            $(this).text(elem[0].text).css("color", colors[value]);
+                        } else {
+                            $(this).empty();
+                        }
+                    }
+                });
+
+            });
+
+
+        script(src='plugins/bower_components/dropify/dist/js/dropify.min.js')
+        script.
+            $(document).ready(function () {
+                // Basic
+                $('.dropify').dropify();
+                // Translated
+                $('.dropify-fr').dropify({
+                    messages: {
+                        default: 'Glissez-déposez un fichier ici ou cliquez',
+                        replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                        remove: 'Supprimer',
+                        error: 'Désolé, le fichier trop volumineux'
+                    }
+                });
+                // Used events
+                var drEvent = $('#input-file-events').dropify();
+                drEvent.on('dropify.beforeClear', function (event, element) {
+                    return confirm("Do you really want to delete \\"
+                    " + element.file.name + "\" ?"
+                    )
+                    ;
+                });
+                drEvent.on('dropify.afterClear', function (event, element) {
+                    alert('File deleted');
+                });
+                drEvent.on('dropify.errors', function (event, element) {
+                    console.log('Has Errors');
+                });
+                var drDestroy = $('#input-file-to-destroy').dropify();
+                drDestroy = drDestroy.data('dropify')
+                $('#toggleDropify').on('click', function (e) {
+                    e.preventDefault();
+                    if (drDestroy.isDropified()) {
+                        drDestroy.destroy();
+                    } else {
+                        drDestroy.init();
+                    }
+                })
+            });
+
+
+

@@ -1,0 +1,55 @@
+
+Hello
+
+**************Angular************
+First, I am willing to show and explain to you my previous Angular projects through sharing my screen so that you can confirm my skill.
+
+Totally, I can do test,build,deploy as well as development In Angular1.x/2.0(CLI,Seed,Quickstater)/4.0.
+So I am very familiar with Protractor for E2E test,Karma,Jasmine for UnitTest,Mocha etc as well as RxJS,Observables,API calling,promise,service,filter,provider,directive,pipe etc.
+Of course, I am proficient in Grunt,Gulp,Bower,Babel,Webpack,Browserify,Systemjs  etc.
+And I am very familiar with JWT,OAuth2,Internationalization and RBAC for log in and sign up process etc.
+
+So I have already finished diverse POC,Admin Dashboards,SPAs,CRM ,Financial app,Educational app,Health Care apps  using MEAN stack.
+
+******************FrontendUI******************
+
+Also, I have good UI design skill and keen eye in UI.
+So I always make  slick and graceful look and feeling, not decent look.Ok?
+
+I think, it would be best to use AngularMaterial for UI  because AngularMaterial supports adaptive layout directive for AngularJS (Angular material 2 or PrimeNG for Angular2)
+May be you use SemanticUI,OnsenUI,MDB,Bootstrap etc,too.(preferred MDB than Bootstrap)
+How about your opinion?
+
+*********************Backend*********************
+In fact, I am proficient in MEAN stack(3+years of experience),so I am flexible in using mongojs, mongoose,schema for data modeling.
+I have strong skill in streaming ,event operation using nodejs. I am strong in Mongodb and MySql as db.
+I have enough experience in connecting frontend in to backend API, constructing RestAPI and good at Swagger,GraphQL for RestAPI,Express Middlewares,Loopback too.
+
+
+https://www.myagentfinder.com/#/
+http://www.gastro-booking.cz
+http://racewayautogroup.ca/
+http://www.novatopo.com
+https://aditjobs.com/
+http://fitdaypass.com
+http://www.aucklanditsalaries.co.nz (contract)
+
+*What I always guarantee to my clients are just High Quality Work and Fast Deliverable.
+I always focus on writing the clean, optimized and scalable code easy to read and maintain..
+
+Anyway, I don't want to brag and write about myself anymore here and will show my skill in my real work.Ok?
+
+I am always very creative,passionate and ambitious in my project,so I don't doubt that you will be satisfied with my fast work result.
+I can work with you with full time in your timezone and I will do daily communication.
+
+Looking forward to receiving a good message from you soon.
+
+Best regards.
+
+http://6minded.com/ (Vue.js)
+http://simpleshowing.com
+http://tergel.com/ backbone.js
+
+http://joboti-widget.azurewebsites.net/
+joboti.com(chat)
+We offer an array of services listed on our site that can potentially help you increase exposure and modernize your web presence. We look to maximize your brand’s potential by generating leads and bringing in new clientele.
